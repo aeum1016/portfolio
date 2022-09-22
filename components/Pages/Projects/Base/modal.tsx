@@ -38,7 +38,8 @@ const ProjectModal: React.FC<ProjectComponents> = (project) => {
         bg="beach.600"
         boxShadow="dark-lg"
         p="20px"
-        w="60%"
+        w={{ base: "90%", md: "75%", lg: "70%", xl: "65%" }}
+        maxW="1000px"
       >
         <Flex direction="column">
           <Flex fontSize="20pt" fontWeight="700">

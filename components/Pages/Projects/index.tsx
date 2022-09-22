@@ -27,7 +27,7 @@ const ProjectsPage = () => {
       <SimpleGrid
         w="70%"
         maxW="1200px"
-        minChildWidth={{ base: "60vw", lg: "30vw" }}
+        minChildWidth={{ base: "75vw", lg: "30vw" }}
         spacing="40px"
         alignContent="center"
       >

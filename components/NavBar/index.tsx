@@ -1,12 +1,22 @@
 import { Link, Flex, Spacer, Button, Text } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import { motion } from "framer-motion";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useScrollPosition } from "../util/ScrollPosition";
 
 const NavBar = () => {
-  const MotionIcon = motion(FontAwesomeIcon);
+  const route = useRouter();
+  const scrollPosition = useScrollPosition();
+
+  const [location, setLocation] = useState("home");
+
+  useEffect(() => {
+    if (route.asPath == "/contact") setLocation("contact");
+    else if (scrollPosition > window.innerHeight / 2 + 100)
+      setLocation("projects");
+    else setLocation("home");
+  }, [scrollPosition, route]);
 
   return (
     <Flex
@@ -23,17 +33,26 @@ const NavBar = () => {
       <Spacer />
       <Flex gap="1" align="center">
         <NextLink href="#top">
-          <Button variant="ghost" _hover={{ backgroundColor: "beach.100" }}>
+          <Button
+            bgColor={location == "home" ? "beach.100" : "transparent"}
+            _hover={{ backgroundColor: "beach.200" }}
+          >
             <Text>Home</Text>
           </Button>
         </NextLink>
         <NextLink href="#projects">
-          <Button variant="solid" _hover={{ backgroundColor: "beach.100" }}>
+          <Button
+            bgColor={location == "projects" ? "beach.100" : "transparent"}
+            _hover={{ backgroundColor: "beach.200" }}
+          >
             <Text>Projects</Text>
           </Button>
         </NextLink>
         <NextLink href="/contact">
-          <Button variant="ghost" _hover={{ backgroundColor: "beach.100" }}>
+          <Button
+            bgColor={location == "contact" ? "beach.100" : "transparent"}
+            _hover={{ backgroundColor: "beach.200" }}
+          >
             <Text>Contact</Text>
           </Button>
         </NextLink>
