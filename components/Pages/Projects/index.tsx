@@ -13,9 +13,9 @@ const ProjectsPage = () => {
       pb="60px"
       bg="beach.400"
       align="center"
-      zIndex="1"
+      zIndex="2"
       scrollMargin="60px"
-      overflow="visible"
+      position="relative"
     >
       <Heading
         py="40px"
