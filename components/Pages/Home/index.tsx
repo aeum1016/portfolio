@@ -8,27 +8,28 @@ const HomePage = () => {
   const MotionIcon = motion(FontAwesomeIcon);
 
   return (
-    <Flex pt="80px" w="100%" position="sticky" top="0px">
+    <Flex w="100%" position="sticky" top="0px">
       <Flex
         direction="column"
         w="100%"
-        h="35vw"
+        h="100vh"
+        pt="80px"
         px="6vw"
-        pt="3vw"
         bgImage="/AJE01367.JPG"
         bgPosition="center"
         bgSize="cover"
       >
         <Heading
           color="beach.800"
-          fontSize={{ base: "8vw", xl: "102.4px" }}
+          fontSize={{ base: "6vw", xl: "76.8px" }}
           fontWeight="700"
+          pt="6vh"
         >
           Alex Eum
         </Heading>
         <Heading
           color="beach.800"
-          fontSize={{ base: "3vw", xl: "38.4px" }}
+          fontSize={{ base: "2vw", xl: "25.6px" }}
           fontWeight="700"
         >
           Student @ University of Florida

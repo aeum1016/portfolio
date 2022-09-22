@@ -32,7 +32,7 @@ const NavBar = () => {
             <Text>Projects</Text>
           </Button>
         </NextLink>
-        <NextLink href="/skills">
+        <NextLink href="/contact">
           <Button variant="ghost" _hover={{ backgroundColor: "beach.100" }}>
             <Text>Contact</Text>
           </Button>
