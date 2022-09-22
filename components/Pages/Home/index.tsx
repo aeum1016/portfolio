@@ -8,20 +8,21 @@ const HomePage = () => {
   const MotionIcon = motion(FontAwesomeIcon);
 
   return (
-    <Flex w="100%" position="sticky" top="0px" zIndex="-1">
+    <Flex w="100%" position="sticky" top="0px">
       <Flex
         direction="column"
         w="100%"
         h="100vh"
-        pt="80px"
+        pt="60px"
         px="6vw"
         bgImage="/AJE01367.JPG"
         bgPosition="center"
         bgSize="cover"
+        zIndex="-1"
       >
         <Heading
           color="beach.800"
-          fontSize={{ base: "6vw", xl: "76.8px" }}
+          fontSize={{ base: "9vw", md: "69.12px" }}
           fontWeight="700"
           pt="6vh"
         >
@@ -29,7 +30,7 @@ const HomePage = () => {
         </Heading>
         <Heading
           color="beach.800"
-          fontSize={{ base: "2vw", xl: "25.6px" }}
+          fontSize={{ base: "3vw", md: "23.04px" }}
           fontWeight="700"
         >
           Student @ University of Florida

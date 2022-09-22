@@ -10,11 +10,11 @@ const ProjectsPage = () => {
       id="projects"
       direction="column"
       w="100%"
-      pb="80px"
+      pb="60px"
       bg="beach.400"
       align="center"
       zIndex="1"
-      scrollMargin="80px"
+      scrollMargin="60px"
     >
       <Heading
         py="40px"

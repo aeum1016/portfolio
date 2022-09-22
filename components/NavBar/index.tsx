@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <Flex
-      h="80px"
+      h="60px"
       w="100%"
       px="20px"
       color="beach.800"
@@ -32,7 +32,7 @@ const NavBar = () => {
     >
       <Spacer />
       <Flex gap="1" align="center">
-        <NextLink href="#top">
+        <NextLink href="/#top">
           <Button
             bgColor={location == "home" ? "beach.100" : "transparent"}
             _hover={{ backgroundColor: "beach.200" }}
@@ -40,7 +40,7 @@ const NavBar = () => {
             <Text>Home</Text>
           </Button>
         </NextLink>
-        <NextLink href="#projects">
+        <NextLink href="/#projects">
           <Button
             bgColor={location == "projects" ? "beach.100" : "transparent"}
             _hover={{ backgroundColor: "beach.200" }}
