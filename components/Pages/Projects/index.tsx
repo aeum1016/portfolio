@@ -15,6 +15,7 @@ const ProjectsPage = () => {
       align="center"
       zIndex="1"
       scrollMargin="60px"
+      overflow="visible"
     >
       <Heading
         py="40px"

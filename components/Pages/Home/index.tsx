@@ -8,7 +8,7 @@ const HomePage = () => {
   const MotionIcon = motion(FontAwesomeIcon);
 
   return (
-    <Flex w="100%" position="sticky" top="0px">
+    <Flex w="100%" position="sticky" top="0px" zIndex="0">
       <Flex
         direction="column"
         w="100%"
