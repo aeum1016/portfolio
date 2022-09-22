@@ -7,8 +7,8 @@ const PortfolioDesc: JSX.Element = (
     <ListItem>This is where you currently are!</ListItem>
     <ListItem>
       This website is actually my third attempt at creating a portfolio site. I
-      wasn&apos;t quite happy with the design of the first two so I've been
-      working hard to build a site that I'm satisfied with.
+      wasn&apos;t quite happy with the design of the first two so I&apos;ve been
+      working hard to build a site that I&apos;m satisfied with.
     </ListItem>
   </List>
 );
