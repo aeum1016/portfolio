@@ -49,7 +49,7 @@ const PortfolioTech: JSX.Element = (
 const PortfolioProject = () => {
   return (
     <ProjectBase
-      photoURLs={["/portfolio.JPG"]}
+      photoURLs={["/Portfolio.JPG", "/Portfolio_projects.JPG"]}
       title="Portfolio"
       cat="software"
       startDate="09/2022"

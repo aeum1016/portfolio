@@ -13,6 +13,7 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import NextLink from "next/link";
+import ImageSlider from "../../../util/ImageSlider";
 
 export interface ProjectComponents {
   photoURLs: string[];
@@ -89,16 +90,11 @@ const ProjectModal: React.FC<ProjectComponents> = (project) => {
             </Box>
             <Spacer />
           </Flex>
-          <Flex direction="column" align="center">
-            <Image
-              src={project.photoURLs[0]}
-              borderRadius="2px"
-              borderColor="beach.400"
-              w="80%"
-              objectFit="cover"
-            />
-            <Flex direction="row" align="center" pt="18px">
+          <Flex direction="column" align="center" py="12px">
+            <ImageSlider photoURLs={project.photoURLs} />
+            <Flex direction="column" pt="20px" w="60%">
               {project.desc}
+              <br />
               {project.features}
             </Flex>
           </Flex>

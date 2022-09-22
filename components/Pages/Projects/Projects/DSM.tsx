@@ -51,7 +51,11 @@ const DSMTech: JSX.Element = (
 const DSMProject = () => {
   return (
     <ProjectBase
-      photoURLs={["/dosomemath.JPG"]}
+      photoURLs={[
+        "/dosomemath.JPG",
+        "/dosomemath_ldrbrd.JPG",
+        "/dosomemath_user.JPG",
+      ]}
       title="DoSomeMath"
       cat="software"
       startDate="03/2022"

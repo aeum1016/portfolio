@@ -49,7 +49,10 @@ const UpliftTech: JSX.Element = (
 const UpliftProject = () => {
   return (
     <ProjectBase
-      photoURLs={["/full_robot_v3_iso.png"]}
+      photoURLs={[
+        "/full_robot_v3_iso.png",
+        "https://www.youtube.com/embed/nMcoK9izvYQ",
+      ]}
       title="Uplift Robotics"
       cat="other"
       startDate="08/2020"

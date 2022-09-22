@@ -38,7 +38,6 @@ const ProjectBase: React.FC<ProjectComponents> = (project) => {
         onClose={onClose}
         scrollBehavior="outside"
         size="6xl"
-        isCentered
       >
         <ProjectModal
           photoURLs={project.photoURLs}
