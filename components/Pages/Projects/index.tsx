@@ -4,22 +4,26 @@ import PortfolioProject from "./Projects/Portfolio";
 import QK65Project from "./Projects/QK65";
 import UpliftProject from "./Projects/Uplift";
 
-const ProjectsPage = () => {
+export interface ProjectRef {
+  pRef: any;
+}
+
+const ProjectsPage: React.FC<ProjectRef> = ({ pRef }) => {
   return (
     <Flex
       id="projects"
+      ref={pRef}
       direction="column"
       w="100%"
-      pb="60px"
+      pb="120px"
       bg="beach.400"
       align="center"
       zIndex="2"
       scrollMargin="60px"
-      position="relative"
     >
       <Heading
         py="40px"
-        fontSize={{ base: "18pt", md: "24pt", lg: "48pt" }}
+        fontSize={{ base: "24pt", lg: "48pt" }}
         fontWeight="700"
         color="beach.800"
       >
@@ -28,7 +32,7 @@ const ProjectsPage = () => {
       <SimpleGrid
         w="70%"
         maxW="1200px"
-        minChildWidth={{ base: "75vw", lg: "30vw" }}
+        columns={{ sm: 1, lg: 2 }}
         spacing="40px"
         alignContent="center"
       >

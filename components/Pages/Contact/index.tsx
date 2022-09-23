@@ -1,8 +1,6 @@
 import { Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import NextLink from "next/link";
 import EmailForm from "../../EmailForm";
 
 const ContactPage = () => {
@@ -22,7 +20,7 @@ const ContactPage = () => {
       >
         <Heading
           color="beach.900"
-          fontSize={{ base: "6vw", xl: "76.8px" }}
+          fontSize={{ base: "9vw", md: "69.12px" }}
           fontWeight="700"
           pt="6vh"
         >

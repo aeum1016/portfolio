@@ -25,6 +25,8 @@ const ProjectBase: React.FC<ProjectComponents> = (project) => {
 
   return (
     <MotionFlex
+      id={project.title}
+      scrollMargin="60px"
       flexDirection="column"
       bg="white"
       boxShadow="2xl"

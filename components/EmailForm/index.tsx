@@ -68,7 +68,7 @@ const EmailForm = () => {
             placeholder="Email"
             variant="filled"
             type="email"
-            name="user_email"
+            name="email"
             w="40%"
             maxW="500px"
             required
