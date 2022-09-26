@@ -17,6 +17,7 @@ const SkillsPage: React.FC<SkillsRef> = ({ sRef }) => {
       pb="120px"
       bg="beach.200"
       align="center"
+      position="relative"
       zIndex="1"
       scrollMargin="60px"
     >
