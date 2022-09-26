@@ -19,6 +19,7 @@ const SkillsPage: React.FC<SkillsRef> = ({ sRef }) => {
       align="center"
       position="relative"
       zIndex="1"
+      transform= "translate3d(0, 0, 0)"
       scrollMargin="60px"
     >
       <Heading
