@@ -19,7 +19,7 @@ const ProjectsPage: React.FC<ProjectRef> = ({ pRef }) => {
       pb="120px"
       bg="beach.400"
       align="center"
-      zIndex="2"
+      zIndex="1"
       scrollMargin="60px"
     >
       <Heading

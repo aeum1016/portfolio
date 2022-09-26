@@ -8,7 +8,6 @@ const HomePage = () => {
   const MotionIcon = motion(FontAwesomeIcon);
 
   return (
-    <Flex w="100%" position="sticky" top="0px" zIndex="0" transform="translate3d(0, 0, -100px)">
       <Flex
         direction="column"
         w="100%"
@@ -18,7 +17,9 @@ const HomePage = () => {
         bgImage="/AJE01367.JPG"
         bgPosition="center"
         bgSize="cover"
-        zIndex="-1"
+        position="sticky"
+        top="0px"
+        transform="translateZ(-100px)"
       >
         <Heading
           color="beach.800"
@@ -58,7 +59,6 @@ const HomePage = () => {
           </NextLink>
         </Flex>
       </Flex>
-    </Flex>
   );
 };
 
