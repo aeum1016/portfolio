@@ -19,6 +19,7 @@ const HomePage = () => {
         bgPosition="center"
         bgSize="cover"
         zIndex="-1"
+        transform="translate3d(0, 0, -100px)"
       >
         <Heading
           color="beach.800"

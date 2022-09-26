@@ -1,5 +1,6 @@
 import { Flex, SimpleGrid, Heading } from "@chakra-ui/react";
 import DSMProject from "./Projects/DSM";
+import FFProject from "./Projects/FF";
 import PortfolioProject from "./Projects/Portfolio";
 import QK65Project from "./Projects/QK65";
 import UpliftProject from "./Projects/Uplift";
@@ -38,6 +39,7 @@ const ProjectsPage: React.FC<ProjectRef> = ({ pRef }) => {
       >
         <PortfolioProject />
         <QK65Project />
+        <FFProject />
         <DSMProject />
         <UpliftProject />
       </SimpleGrid>
